@@ -1,5 +1,3 @@
-Here's a decent README for the project:
-
 # GrocDocAbuse - X Hackerthon Plugin
 
 This Chrome extension modifies the content of X.AI documentation pages in a mischievous and unexpected way. It uses the X.AI API to transform text elements on the page, creating a unique and potentially entertaining browsing experience.
