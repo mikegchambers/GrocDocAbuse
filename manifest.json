@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "X Hackerthon Plugin",
+  "version": "1.0",
+  "description": "Makes changes to the page, work in progress.",
+  "permissions": [
+    "activeTab",  // Permission to access the active tab
+    "storage"     // Permission to use Chrome storage
+  ],
+  "host_permissions": [
+    "https://api.x.ai/*"  // Permission to make requests to the X.AI API
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://docs.x.ai/*"],  // Apply content script to X.AI docs
+      "js": ["content.js"]                 // Content script to be injected
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["key.txt"],            // Allow access to key.txt file
+      "matches": ["https://*.x.ai/*", "https://x.ai/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"      // Background script
+  },
+  "options_page": "settings.html"          // Settings page for the extension
+}

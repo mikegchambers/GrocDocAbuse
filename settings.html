@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Hackerthon Plugin Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>X Hackerthon Plugin Settings</h1>
+    <label>
+        <input type="checkbox" id="experimentalMode"> Enable Experimental Mode
+    </label>
+    <label for="systemPrompt">System Prompt:</label>
+    <textarea id="systemPrompt"></textarea>
+    <label for="userPromptTemplate">User Prompt Template:</label>
+    <textarea id="userPromptTemplate"></textarea>
+    <button id="saveSettings">Save Settings</button>
+    <script src="settings.js"></script>
+</body>
+</html>
